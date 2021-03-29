@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
     <title>Resume</title>
   </head>
   <body class="bg-gray-100">
-    <main class="bg-white w-3/4 mx-auto py-12 px-10">
+    <main class="bg-white w-8/12 mx-auto py-12 px-10">
       <section id="heading" class="text-center relative border-b-2 mx-6 pb-4">
         <h1 class="text-4xl leading-none font-extrabold text-gray-900 mb-4">
           Keen Renzo Ballon
@@ -24,16 +23,126 @@
         </div>
       </section>
       <div class="heading-title">
-        <p class="heading-text">Professional Summary</p>
+        <p class="heading-text tracking-wide font-bold">Professional Summary</p>
       </div>
       <section id="summary" class="relative border-b-2 mx-6 pb-4">
-        <p class="text-lg">
+        <p class="text-base">
           An intern with some experience in Linux System Administration, cloud
           computing administration and services (AWS, EC2), web development, and
           some DevOps with the help of automation tools. Has 5 years of general
           work experience as Student Assistant.
         </p>
+        <div class="w-full mt-4 flex">
+          <div class="w-1/2 mr-3 px-3">
+            <ul class="text-sm list-disc list-inside">
+              <li>Shell Scripting</li>
+              <li>Web Services (Nginx, Apache)</li>
+              <li>Postgres</li>
+              <li>Networking Concepts (IP, DNS, DHCP)</li>
+            </ul>
+          </div>
+          <div class="w-1/2 px-3">
+            <ul class="text-sm list-disc list-inside">
+              <li>Ansible, Terraform and other automation tools</li>
+              <li>NodeJS programming</li>
+              <li>Docker and Kubernetes</li>
+            </ul>
+          </div>
+        </div>
       </section>
+      <div class="heading-title">
+        <p class="heading-text tracking-wide font-bold">Education</p>
+      </div>
+      <section id="education" class="relative border-b-2 mx-6 pb-4">
+        <p>De La Salle Araneta University</p>
+        <p><strong>BS Computer Engineering</strong>, 2018 - Present</p>
+      </section>
+      <div class="heading-title">
+        <p class="heading-text tracking-wide font-bold">
+          Professional Experience
+        </p>
+      </div>
+      <section id="prof-exp" class="relative border-b-2 mx-6 pb-4 -mt-2">
+        <h4 class><strong>Working Scholar (2016 - 2021)</strong></h4>
+        <ul class="list-disc list-inside">
+          <ul class="list-disc list-inside">
+            <li class="font-bold">
+              University Research Center (September 2020 - June 2021)
+            </li>
+            <li class="ml-6 text-sm">
+              Email and on-call technical support, and member of the organizing
+              committee for an International Research Conference with 143
+              post-graduate participants.
+            </li>
+            <li class="font-bold">
+              Tertiary Department Science Laboratory Assistant (2019 - August
+              2020)
+            </li>
+
+            <li class="font-bold">University Library Clerk (2016 - 2019)</li>
+            <li class="ml-6 text-sm">
+              Front-desk assistant for various clients in the university
+              learning center (from Kinder up to Postgraduate)
+            </li>
+          </ul>
+        </ul>
+      </section>
+      <div class="heading-title">
+        <p class="heading-text tracking-wide font-bold">Projects</p>
+      </div>
+
+      <section id="projects" class="relative border-b-2 mx-6 pb-4 -mt-2">
+        <div class="mb-4">
+          <h4 class><strong>Portfolio and Blog Page</strong></h4>
+          <h4 class>
+            <strong
+              >Tech Stack: React | Gatsby.js | Strapi (CMS) | Docker</strong
+            >
+          </h4>
+          <ul class="list-disc">
+            <li class="ml-12 text-sm">
+              Using GitHub Actions triggered with every commit I am able to have
+              a CD pipeline which deploys to Netlify as a website host for my
+              portfolio project and a blog documentation of my journey.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h4 class><strong>Resume Page</strong></h4>
+          <h4 class>
+            <strong
+              >Tech Stack: AWS | Linux | Terraform | Ansible | Docker |
+              Nginx</strong
+            >
+          </h4>
+          <ul class="list-disc">
+            <li class="ml-12 text-sm">
+              An HTML version of my resume. Used Terraform to build the AWS
+              cloud infrastructure and run ansible pull to provision the server
+              and run a docker build of NGINX to serve the content.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class><strong>Reddit-clone</strong></h4>
+          <h4 class>
+            <strong>
+              Tech Stack: AWS | Linux | Terraform | Docker | Node.js |
+              GraphQL</strong
+            >
+          </h4>
+          <ul class="list-disc">
+            <li class="ml-12 text-sm">
+              Application similar to Reddit in its functionality. The project
+              taught me more into backend technology and system administration
+              processes (AWS, Linux, DNS).
+            </li>
+          </ul>
+        </div>
+      </section>
+      <h4 class="">References are supplied upon request</h4>
     </main>
   </body>
 </html>
