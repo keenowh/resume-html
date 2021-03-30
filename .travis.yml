@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t keenowh/resume-html -f Dockerfile .
+
+after_success:
+  - echo $DOCKER_PASSWORD | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push keenowh/resume-html
