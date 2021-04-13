@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body {
+  box-sizing: border-box;
+}
+
+.heading-title {
+  transform: translateY(-0.9rem);
+  text-align: center;
+}
+
+.heading-text {
+  display: inline-block;
+  background-color: white;
+  padding: 0 1.5rem;
+}
