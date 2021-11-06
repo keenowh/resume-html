@@ -1,3 +1,6 @@
-node_modules/
+.terraform
 
-cache/
+Resume.docx
+Resume.pdf
+
+*terraform*
