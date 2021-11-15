@@ -8,6 +8,19 @@
             href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
         />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/icon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="assets/icon/site.webmanifest" />
         <script
             src="https://kit.fontawesome.com/9f340bd05b.js"
             crossorigin="anonymous"
@@ -15,24 +28,49 @@
         <title>Resume</title>
     </head>
     <body class="bg-gray-300">
-        <main class="bg-white w-8/12 mx-auto py-8 px-10 my-8 shadow-xl">
+        <main
+            class="
+                bg-white
+                lg:w-8/12
+                md:w-10/12
+                mx-auto
+                py-8
+                px-10
+                my-8
+                shadow-xl
+            "
+        >
             <div id="content">
-                <section
-                    id="heading"
-                    class="text-center relative border-b-2 mx-6 pb-4"
-                >
+                <section id="heading" class="text-center border-b-2 mx-6 pb-4">
                     <h1
                         class="
+                            block
                             text-4xl
                             leading-none
                             font-extrabold
                             text-gray-900
-                            mb-4
+                            mb-2
                         "
                     >
                         Keen Renzo Ballon
                     </h1>
-                    <div class="flex my-2">
+                    <a
+                        class="
+                            inline-block
+                            bg-blue-500
+                            hover:bg-blue-700
+                            text-white
+                            font-bold
+                            py-2
+                            px-4
+                            rounded-full
+                            mb-2
+                        "
+                        target="_blank"
+                        href="https://s3-resume-bucket-lab.s3.amazonaws.com/Resume.pdf"
+                        >Download One-page Resume</a
+                    >
+                    <div class="flex mt-2 my-2">
                         <div class="w-1/3">
                             <i class="fab fa-linkedin"></i> LinkedIn:
                             <a href="https://www.linkedin.com/in/keen-ballon/"
@@ -120,7 +158,7 @@
                             </li>
                             <li class="font-bold">
                                 Tertiary Department Science Laboratory Assistant
-                                (2019 - August 2020)
+                                (April 2019 - August 2020)
                             </li>
                             <li class="ml-6 text-sm">
                                 Student assistant that handled laboratory
@@ -131,7 +169,7 @@
                             </li>
 
                             <li class="font-bold">
-                                University Library Clerk (2016 - 2019)
+                                University Library Clerk (May 2016 - April 2019)
                             </li>
                             <li class="ml-6 text-sm">
                                 Library clerk and front-desk duties that have
@@ -172,8 +210,8 @@
                         <h4 class><strong>Resume Page</strong></h4>
                         <h4 class>
                             <strong
-                                >Tech Stack: AWS | Linux | TravisCI | Terraform
-                                | Ansible | Docker | Nginx</strong
+                                >Tech Stack: AWS | Linux | Terraform | Docker |
+                                NGINX</strong
                             >
                         </h4>
                         <ul class="list-disc">

@@ -1,9 +1,8 @@
 provider "aws" {
 
-  access_key = "ASIAVOBIMUHNCJXBB375"
-  secret_key = "tdtejXRLlYzjgvBgj+PWiA4UbIkmhNibLGqBedUr"
-
-  token = "FwoGZXIvYXdzEPj//////////wEaDPWOh8eeo+Zy731xwSLHAQyt5R/MuxNN7CxRIcJKbJoeAo8muqcQn/oM1cBv72wK0tyQ0URGlD476ceDP8knL2RfqE3tK2DSPG9m1iWhV2KwqqvBJcavJ6xsKKIWSQ9zXX7PyFLsSynMDNxcRxTJbvkfYM+lBfGgo+3eql3qKGWvX0ObjNkyOydq9gBhC1At10BSAbQxvylLSyTjof9hxNEiV370WRO4jy2EA70B7gjGx7XecY6PSwP+7S/CljGXXCNmOpOJsoeNy7ou5eDpR4LWAGmRf8gog5yajAYyLUFaRlS1vygDJIOvUX/qygkZLroGrsevGiNb9TvKdYY3bEmyWVSqcSMS20GpgQ=="
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+  token      = var.aws_token
 
   region = "us-east-1"
 }
@@ -23,6 +22,7 @@ resource "aws_s3_bucket" "b1" {
   }
   force_destroy = true
 
+
 }
 
 # Upload an object
@@ -37,4 +37,5 @@ resource "aws_s3_bucket_object" "object" {
   source       = "Resume.pdf"
   content_type = "application/pdf"
   etag         = filemd5("Resume.pdf")
+  storage_class = "STANDARD_IA"
 }
