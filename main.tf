@@ -37,5 +37,5 @@ resource "aws_s3_bucket_object" "object" {
   source       = "Resume.pdf"
   content_type = "application/pdf"
   etag         = filemd5("Resume.pdf")
-  storage_class = "STANDARD_IA"
+  storage_class = "ONEZONE_IA"
 }
