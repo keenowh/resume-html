@@ -1,41 +1,24 @@
-provider "aws" {
-
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  token      = var.aws_token
-
-  region = "us-east-1"
+# Create new storage bucket in the US multi-region
+# with standard storage
+provider "google" {
+  project     = "uaap-season-86-dp"
+  region      = "asia-southeast1"
 }
 
-resource "aws_s3_bucket" "b1" {
+resource "google_storage_bucket" "static" {
+ name          = "resume-bucket-keen"
+ location      = "ASIA"
+ storage_class = "STANDARD"
 
-  bucket = "s3-resume-bucket-lab"
-
-  acl = "private" # or can be "public-read"
-
-  tags = {
-
-    Name = "My bucket"
-
-    Environment = "Dev"
-
-  }
-  force_destroy = true
-
-
+ uniform_bucket_level_access = true
 }
 
-# Upload an object
-resource "aws_s3_bucket_object" "object" {
+# Upload a text file as an object
+# to the storage bucket
 
-  bucket = aws_s3_bucket.b1.id
-
-  key = "Resume.pdf"
-
-  acl = "public-read" # or can be "public-read"
-
-  source       = "Resume.pdf"
-  content_type = "application/pdf"
-  etag         = filemd5("Resume.pdf")
-  storage_class = "ONEZONE_IA"
+resource "google_storage_bucket_object" "default" {
+ name         = "resume.pdf"
+ source       = "resume.pdf"
+ content_type = "application/pdf"
+ bucket       = google_storage_bucket.static.id
 }

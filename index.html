@@ -1,368 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/styles.css" />
-        <link
-            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-            rel="stylesheet"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/assets/icon/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/assets/icon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="assets/icon/site.webmanifest" />
-        <script
-            src="https://kit.fontawesome.com/9f340bd05b.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>Resume</title>
-    </head>
-    <body class="bg-gray-300">
-        <main
-            class="
-                bg-white
-                lg:w-8/12
-                md:w-10/12
-                mx-auto
-                py-8
-                px-10
-                my-8
-                shadow-xl
-            "
-        >
-            <div id="content">
-                <section id="heading" class="text-center border-b-2 mx-6 pb-4">
-                    <h1
-                        class="
-                            block
-                            text-4xl
-                            leading-none
-                            font-extrabold
-                            text-gray-900
-                            mb-2
-                        "
-                    >
-                        Keen Renzo Ballon
-                    </h1>
-                    <a
-                        class="
-                            inline-block
-                            bg-blue-500
-                            hover:bg-blue-700
-                            text-white
-                            font-bold
-                            py-2
-                            px-4
-                            rounded-full
-                            mb-2
-                        "
-                        target="_blank"
-                        href="https://s3-resume-bucket-lab.s3.amazonaws.com/Resume.pdf"
-                        >Download One-page Resume</a
-                    >
-                    <div class="flex mt-2 my-2">
-                        <div class="w-1/3">
-                            <i class="fab fa-linkedin"></i> LinkedIn:
-                            <a href="https://www.linkedin.com/in/keen-ballon/"
-                                >Keen Ballon</a
-                            >
-                        </div>
-                        <div class="w-1/3">
-                            <i class="fab fa-github-square"></i>
-                            Github:
-                            <a target="_blank" href="https://github.com/keenowh"
-                                >Click here</a
-                            >
-                        </div>
-                        <div class="w-1/3">
-                            <i class="fas fa-envelope-open-text"></i> Email:
-                            keenballon@gmail.com
-                        </div>
-                    </div>
-                </section>
-                <div class="heading-title">
-                    <p class="heading-text tracking-wide font-bold">
-                        Professional Summary
-                    </p>
-                </div>
-                <section id="summary" class="relative border-b-2 mx-6 pb-4">
-                    <p class="text-base sum">
-                        A web enthusiast with some experience in basic system
-                        administration, cloud services (AWS, Azure), web
-                        development, and some DevOps. Together with my projects,
-                        my 5 years of general work experience as Student
-                        Assistant, and my leadership experience as org officer
-                        are proofs for both my technical and soft skills..
-                    </p>
-                    <div class="w-full mt-4 flex">
-                        <div class="w-1/2 mr-3 px-3">
-                            <ul class="text-sm list-disc list-inside">
-                                <li>Shell Scripting</li>
-                                <li>Web Services (Nginx, Apache)</li>
-                                <li>Databases (PostgreSQL and NoSQL)</li>
-                            </ul>
-                        </div>
-                        <div class="w-1/2 px-3">
-                            <ul class="text-sm list-disc list-inside">
-                                <li>React and Redux</li>
-                                <li>Networking Concepts (IP, DNS, DHCP)</li>
-                                <li>Docker and NodeJS Programming</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <div class="heading-title">
-                    <p class="heading-text tracking-wide font-bold">
-                        Education
-                    </p>
-                </div>
-                <section id="education" class="relative border-b-2 mx-6 pb-4">
-                    <p>De La Salle Araneta University</p>
-                    <p>
-                        <strong>BS Computer Engineering</strong>, 2018 - Present
-                    </p>
-                </section>
-                <div class="heading-title">
-                    <p class="heading-text tracking-wide font-bold">
-                        Work Experience
-                    </p>
-                </div>
-                <section
-                    id="prof-exp"
-                    class="relative border-b-2 mx-6 pb-4 -mt-2"
-                >
-                    <h4 class>
-                        <strong>Working Scholar (2016 - 2021)</strong>
-                    </h4>
-                    <ul class="list-disc list-inside">
-                        <ul class="list-disc list-inside">
-                            <li class="font-bold">
-                                University Research Center (September 2020 -
-                                June 2021)
-                            </li>
-                            <li class="ml-6 text-sm">
-                                Virtual Assistant handling email and technical
-                                support, with digital graphics (Posters,
-                                banners, and etc.) in university virtual events
-                                with ~500 post-graduate attendees.
-                            </li>
-                            <li class="font-bold">
-                                Tertiary Department Science Laboratory Assistant
-                                (April 2019 - August 2020)
-                            </li>
-                            <li class="ml-6 text-sm">
-                                Student assistant that handled laboratory
-                                equipment and facility requests, and their
-                                inventory for lab students. Was able to handle
-                                the bare minimum operations of the department as
-                                a sole employee before.
-                            </li>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/icon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/icon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/icon/site.webmanifest" />
+		<script
+			src="https://kit.fontawesome.com/9f340bd05b.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Resume</title>
+	</head>
+	<body class="bg-gray-300">
+		<main
+			class="bg-white xl:w-6/12 lg:w-8/12 md:w-10/12 mx-auto py-8 px-10 my-8 shadow-xl"
+		>
+			<div id="content">
+				<section id="heading" class="text-center border-b-2 mx-6 pb-4">
+					<h1
+						class="block text-4xl leading-none font-extrabold text-gray-900 mb-2"
+					>
+						Keen Renzo Ballon
+					</h1>
+					<a
+						class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-2"
+						target="_blank"
+						href="https://storage.cloud.google.com/resume-bucket-keen/resume.pdf"
+						>Download One-page Resume</a
+					>
+					<div class="flex mt-2 my-2">
+						<div class="w-1/3">
+							<i class="fab fa-linkedin"></i> LinkedIn:
+							<a href="https://www.linkedin.com/in/keen-ballon/"
+								>Keen Ballon</a
+							>
+						</div>
+						<div class="w-1/3">
+							<i class="fab fa-github-square"></i>
+							Github:
+							<a target="_blank" href="https://github.com/keenowh"
+								>Click here</a
+							>
+						</div>
+						<div class="w-1/3">
+							<i class="fas fa-envelope-open-text"></i> Email:
+							keenballon@gmail.com
+						</div>
+					</div>
+				</section>
+				<div class="heading-title">
+					<p class="heading-text tracking-wide font-bold">
+						Professional Summary
+					</p>
+				</div>
+				<section id="summary" class="relative border-b-2 mx-6 pb-4">
+					<p class="text-base sum">
+						Software engineer for Flutter and NodeJS with QA
+						Automation experience and system administration skills
+						for cloud service. Geared towards making my co-workers'
+						development experience easier, I’ve focused on making
+						the development pipeline automated which ensured more
+						time for developer action.
+					</p>
+					<div class="w-full mt-4 flex">
+						<div class="w-1/2 mr-3 px-3">
+							<ul class="text-sm list-disc list-inside">
+								<li>Bash Scripting and CI/CD Automation</li>
+								<li>Git and GitLab</li>
+								<li>Databases, ETL, Pipelines</li>
+							</ul>
+						</div>
+						<div class="w-1/2 px-3">
+							<ul class="text-sm list-disc list-inside">
+								<li>Python, Flutter, React, and NodeJS</li>
+								<li>Google Cloud Platform, Docker</li>
+								<li>Agile Methodology (Scrum)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="heading-title">
+					<p class="heading-text tracking-wide font-bold">
+						Education
+					</p>
+				</div>
+				<section id="education" class="relative border-b-2 mx-6 pb-4">
+					<p>De La Salle Araneta University</p>
+					<p>
+						<strong>BS Computer Engineering</strong>, 2018 - Present
+					</p>
+				</section>
+				<div class="heading-title">
+					<p class="heading-text tracking-wide font-bold">
+						Work Experience
+					</p>
+				</div>
+				<section
+					id="prof-exp"
+					class="relative border-b-2 mx-6 pb-4 -mt-2"
+				>
+					<h4 class>
+						<strong
+							>Achieve Without Borders Inc. (2021 -
+							Present)</strong
+						>
+					</h4>
+					<ul class="list-disc list-inside">
+						<ul class="list-disc list-inside">
+							<li class="font-bold">
+								Junior Full Stack Developer (September 2022 -
+								Present)
+							</li>
+							<li class="ml-6 text-sm">
+								Developed features and API endpoints for
+								different sub-projects in an e-commerce app
+								using different technologies (Flutter and
+								Javascript).
+							</li>
+							<li class="ml-6 text-sm">
+								Developed customized Python solutions using Odoo
+								framework servers.
+							</li>
+							<li class="ml-6 text-sm">
+								Suggested solution for image requests that
+								reduced latency from 100 - 500ms to 10-30ms.
+							</li>
+							<li class="ml-6 text-sm">
+								Provided client’s specific data needs and
+								database scraping tasks with custom made
+								scripts.
+							</li>
+							<li class="ml-6 text-sm">
+								Allowed any developer to deploy to different
+								environments due to automated CI/CD pipelines
+								and reduction of deployment time from 1hr to 30
+								mins at most.
+							</li>
+							<li class="ml-6 text-sm">
+								Performed systems administration, provision, and
+								monitoring on development and production systems
+							</li>
+							<li class="font-bold">
+								QA Automation Engineer (February 2022 -
+								September 2022)
+							</li>
+							<li class="ml-6 text-sm">
+								Wrote programmatic test scripts extending
+								Cypress test functionalities which also made the
+								test process startup significantly faster to
+								nearly 50% (15 seconds to 7.5 seconds)
+							</li>
+							<li class="ml-6 text-sm">
+								Became a reference person for questions and
+								queries regarding Cypress Testing.
+							</li>
+							<li class="ml-6 text-sm">
+								Introduced DevOps pipeline changes in order to
+								lessen overall testing time through strategic
+								testing.
+							</li>
+							<li class="ml-6 text-sm">
+								Recommended development approaches to a problem
+								making tests for the feature possible.
+							</li>
 
-                            <li class="font-bold">
-                                University Library Clerk (May 2016 - April 2019)
-                            </li>
-                            <li class="ml-6 text-sm">
-                                Library clerk and front-desk duties that have
-                                been assigned to different libraries catering to
-                                various types of clients ranging from Elementary
-                                students to Post-Graduate.
-                            </li>
-                        </ul>
-                    </ul>
-                </section>
-                <div class="heading-title">
-                    <p class="heading-text tracking-wide font-bold">Projects</p>
-                </div>
+							<li class="font-bold">
+								Solutions Engineering Intern (December 2021 -
+								February 2022)
+							</li>
+							<li class="ml-6 text-sm">
+								Immersed on different roles in an Agile software
+								development team: Development, QA, Business
+								Analyst
+							</li>
+							<li class="ml-6 text-sm">
+								Wrote Automation Test Scripts to support the
+								testing initiatives of the project.
+							</li>
+							<li class="ml-6 text-sm">
+								Made tests more fault proof.Previously
+								identified impediments in testing were overcome
+								as I created algorithms to solve them.
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<div class="heading-title">
+					<p class="heading-text tracking-wide font-bold">Projects</p>
+				</div>
 
-                <section
-                    id="projects"
-                    class="relative border-b-2 mx-6 pb-4 -mt-2"
-                >
-                    <div class="mb-4">
-                        <h4 class>
-                            <strong
-                                >Portfolio and Blog Page -
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://github.com/keenowh/keen.dev-blog"
-                                        >GitHub Link</a
-                                    ></span
-                                >
+				<section
+					id="projects"
+					class="relative border-b-2 mx-6 pb-4 -mt-2"
+				>
+					<div class="mb-4">
+						<h4 class>
+							<strong
+								>Portfolio and Blog Page -
+								<span
+									><a
+										style="color: blue"
+										target="_blank"
+										href="https://github.com/keenowh/keen.dev-blog"
+										>GitHub Link</a
+									></span
+								>
 
-                                |
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://keendev.netlify.app/"
-                                        >Live Link</a
-                                    ></span
-                                ></strong
-                            >
-                        </h4>
+								|
+								<span
+									><a
+										style="color: blue"
+										target="_blank"
+										href="https://keendev.netlify.app/"
+										>Live Link</a
+									></span
+								></strong
+							>
+						</h4>
 
-                        <h4 class>
-                            <strong
-                                >Tech Stack: React | Gatsby.js | Strapi (CMS) |
-                                Docker</strong
-                            >
-                        </h4>
-                        <ul class="list-disc">
-                            <li class="ml-12 text-sm">
-                                Using GitHub Actions triggered with every commit
-                                I am able to have a CD pipeline which deploys to
-                                Netlify as a website host for my portfolio
-                                project and a blog documentation of my journey.
-                            </li>
-                        </ul>
-                    </div>
+						<h4 class>
+							<strong
+								>Tech Stack: React | Gatsby.js | Strapi (CMS) |
+								Docker</strong
+							>
+						</h4>
+						<ul class="list-disc">
+							<li class="ml-12 text-sm">
+								Using GitHub Actions triggered with every commit
+								I am able to have a CD pipeline which deploys to
+								Netlify as a website host for my portfolio
+								project and a blog documentation of my journey.
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class>
+							<strong
+								>UAAP Season 86 Stats ETL Pipeline -
+								<span
+									><a
+										style="color: blue"
+										target="_blank"
+										href="https://github.com/keenowh/uaapseason86-datapipeline"
+										>GitHub Link</a
+									></span
+								></strong
+							>
+						</h4>
+						<h4 class>
+							<strong> Tech Stack: GCP | Python</strong>
+						</h4>
+						<ul class="list-disc">
+							<li class="ml-12 text-sm">
+								An ETL data pipeline for garnering player and
+								team stats for personal usage and further data
+								analysis
+							</li>
+						</ul>
+					</div>
+					<br />
+					<div class="mb-4">
+						<h4 class>
+							<strong
+								>Resume Page -
+								<span
+									><a
+										style="color: blue"
+										target="_blank"
+										href="https://github.com/keenowh/resume-html"
+										>GitHub Link</a
+									></span
+								></strong
+							>
+						</h4>
+						<h4 class>
+							<strong
+								>Tech Stack: AWS | Linux | Terraform | Docker |
+								NGINX</strong
+							>
+						</h4>
+						<ul class="list-disc">
+							<li class="ml-12 text-sm">
+								An HTML version of my resume. Used Terraform to
+								build the AWS cloud infrastructure which will
+								contain the downloadable resume in AWS S3.
+								Optional to run on docker build of NGINX to
+								serve the content and put on AWS.
+							</li>
+						</ul>
+					</div>
 
-                    <div class="mb-4">
-                        <h4 class>
-                            <strong
-                                >Resume Page -
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://github.com/keenowh/resume-html"
-                                        >GitHub Link</a
-                                    ></span
-                                ></strong
-                            >
-                        </h4>
-                        <h4 class>
-                            <strong
-                                >Tech Stack: AWS | Linux | Terraform | Docker |
-                                NGINX</strong
-                            >
-                        </h4>
-                        <ul class="list-disc">
-                            <li class="ml-12 text-sm">
-                                An HTML version of my resume. Used Terraform to
-                                build the AWS cloud infrastructure which will
-                                contain the downloadable resume in AWS S3.
-                                Optional to run on docker build of NGINX to
-                                serve the content and put on AWS.
-                            </li>
-                        </ul>
-                    </div>
+					<div class="mb-4">
+						<h4 class>
+							<strong
+								>Reddit-clone -
+								<span
+									><a
+										style="color: blue"
+										target="_blank"
+										href="https://github.com/keenowh/reddit-clone"
+										>GitHub Link</a
+									></span
+								></strong
+							>
+						</h4>
+						<h4 class>
+							<strong>
+								Tech Stack: AWS | Linux | Terraform | Docker |
+								Node.js | GraphQL</strong
+							>
+						</h4>
+						<ul class="list-disc">
+							<li class="ml-12 text-sm">
+								Application similar to Reddit in its
+								functionality. The project taught me more into
+								backend technology and system administration
+								processes (AWS, Linux, DNS).
+							</li>
+						</ul>
+					</div>
+				</section>
 
-                    <div class="mb-4">
-                        <h4 class>
-                            <strong
-                                >Reddit-clone -
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://github.com/keenowh/reddit-clone"
-                                        >GitHub Link</a
-                                    ></span
-                                ></strong
-                            >
-                        </h4>
-                        <h4 class>
-                            <strong>
-                                Tech Stack: AWS | Linux | Terraform | Docker |
-                                Node.js | GraphQL</strong
-                            >
-                        </h4>
-                        <ul class="list-disc">
-                            <li class="ml-12 text-sm">
-                                Application similar to Reddit in its
-                                functionality. The project taught me more into
-                                backend technology and system administration
-                                processes (AWS, Linux, DNS).
-                            </li>
-                        </ul>
-                    </div>
+				<div class="heading-title">
+					<p class="heading-text tracking-wide font-bold">
+						Leadership Experience
+					</p>
+				</div>
 
-                    <div>
-                        <h4 class>
-                            <strong
-                                >E-commerce Website -
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://github.com/keenowh/ecom-site-lab"
-                                        >GitHub Link</a
-                                    ></span
-                                >
-                                |
-                                <span
-                                    ><a
-                                        style="color: blue"
-                                        target="_blank"
-                                        href="https://naneun-live.herokuapp.com"
-                                        >Live Link</a
-                                    ></span
-                                ></strong
-                            >
-                        </h4>
-                        <h4 class>
-                            <strong>
-                                Tech Stack: Firebase | React | Stripe</strong
-                            >
-                        </h4>
-                        <ul class="list-disc">
-                            <li class="ml-12 text-sm">
-                                Developed as a personal project to learn about
-                                React and Redux. Utilizing the ease to setup
-                                backend for authentication using Firebase.
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+				<section
+					id="projects"
+					class="relative border-b-2 mx-6 pb-4 -mt-2"
+				>
+					<div class="mb-4">
+						<h4 class>
+							<strong
+								>La Salle Araneta Computer Engineering
+								Society</strong
+							>
+						</h4>
+						<ul class="list-disc">
+							<li class="ml-12 text-sm">
+								Year Representative (2018 - 2019)
+							</li>
+							<li class="ml-12 text-sm">
+								VP for Academic Affairs (2019 - 2020)
+							</li>
+							<li class="ml-12 text-sm">
+								Secretary (2020 - 2021)
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</main>
 
-                <div class="heading-title">
-                    <p class="heading-text tracking-wide font-bold">
-                        Leadership Experience
-                    </p>
-                </div>
+		<!-- <button id="print-button">Print</button> -->
 
-                <section
-                    id="projects"
-                    class="relative border-b-2 mx-6 pb-4 -mt-2"
-                >
-                    <div class="mb-4">
-                        <h4 class>
-                            <strong
-                                >La Salle Araneta Computer Engineering
-                                Society</strong
-                            >
-                        </h4>
-                        <ul class="list-disc">
-                            <li class="ml-12 text-sm">
-                                Year Representative (2018 - 2019)
-                            </li>
-                            <li class="ml-12 text-sm">
-                                VP for Academic Affairs (2019 - 2020)
-                            </li>
-                            <li class="ml-12 text-sm">
-                                Secretary (2020 - 2021)
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <button id="print-button">Print</button>
-
-        <script src="dist/index.js"></script>
-    </body>
+		<script src="dist/index.js"></script>
+	</body>
 </html>
