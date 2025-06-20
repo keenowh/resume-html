@@ -19,13 +19,20 @@ jobs:
         with:
           terraform_version: 1.6.6
       
-      - name: Use secrets as env vars
-        env:
-          AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-          AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      - name: Create terraform.tfvars using secrets
         run: |
-          echo $AWS_ACCESS_KEY >> terraform.tfvars
-          echo $AWS_SECRET_KEY >> terraform.tfvars
+          cat > terraform.tfvars <<EOF
+          access_key = "${{ secrets.AWS_ACCESS_KEY }}"
+          secret_key = "${{ secrets.AWS_SECRET_KEY }}"
+          EOF
+      
+      # - name: Use secrets as env vars
+      #   env:
+      #     AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+      #     AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      #   run: |
+      #     echo $AWS_ACCESS_KEY >> terraform.tfvars
+      #     echo $AWS_SECRET_KEY >> terraform.tfvars
 
       - name: Terraform Init
         run: terraform init
