@@ -1,8 +1,7 @@
 provider "aws" {
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
-
-  region = "us-east-1"
+  region     = "us-east-1"
 }
 
 resource "aws_s3_bucket" "b1" {
@@ -23,8 +22,8 @@ resource "aws_s3_bucket_object" "object" {
   key    = "Resume.pdf"
   acl    = "public-read" # or can be "public-read"
 
-  source       = "Resume.pdf"
-  content_type = "application/pdf"
-  etag         = filemd5("Resume.pdf")
+  source        = "Resume.pdf"
+  content_type  = "application/pdf"
+  etag          = filemd5("Resume.pdf")
   storage_class = "ONEZONE_IA"
 }
