@@ -22,8 +22,8 @@ jobs:
       - name: Create terraform.tfvars using secrets
         run: |
           cat > terraform.tfvars <<EOF
-          access_key = "${{ secrets.AWS_ACCESS_KEY }}"
-          secret_key = "${{ secrets.AWS_SECRET_KEY }}"
+          aws_access_key = "${{ secrets.AWS_ACCESS_KEY }}"
+          aws_secret_key = "${{ secrets.AWS_SECRET_KEY }}"
           EOF
       
       # - name: Use secrets as env vars
