@@ -44,6 +44,7 @@ resource "aws_s3_bucket_policy" "allow_public_read" {
   depends_on = [aws_s3_bucket_public_access_block.b1]
 }
 
+
 # Upload an object
 resource "aws_s3_bucket_object" "object" {
   bucket = aws_s3_bucket.b1.id
@@ -51,6 +52,6 @@ resource "aws_s3_bucket_object" "object" {
 
   source        = "Resume.pdf"
   content_type  = "application/pdf"
-  etag          = filemd5("Resume.pdf")
   storage_class = "ONEZONE_IA"
+  etag          = "${filemd5("Resume.pdf")}-${timestamp()}"
 }
